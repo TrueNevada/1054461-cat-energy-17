@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Кэт энерджи</title>
+  </head>
+  <body>
+
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="" width="" height="" alt="Cat Energy">
+      </a>
+      <nav class="main-navigation">
+        <button class="main-navigation__toggle" type="button">Открыть меню</button>
+        <div class="main-navigation__wrapper">
+            <ul class="main-navigation__list site-list">
+                <li class="site-list__item">
+                  <a>Главная</a>
+                </li>
+                <li class="site-list__item site-list__item--active">
+                  <a href="catalog.html">Каталог</a>
+                </li>
+                <li class="site-list__item">
+                  <a href="form.html">Подбор программы</a>
+                </li>
+            </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+
+      <h1 class="visually-hidden">«Cat Energy» — функциональное питание для котов</h1>
+
+      <form class="prog-selection" action="https://echo.htmlacademy.ru" method="post">
+        <h2 class="prog-selection__title">Подбор программы</h2>
+        <p class="prog-selection__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        <div class="cat-info">
+          <label for="cat-name">Имя:<sup>*</sup></label>
+          <input id="cat-name" type="text" name="cat-name" value="" placeholder="Барсик">
+          <label for="weight">Вес (кг):<sup>*</sup></label>
+          <input id="weight" type="text" name="weight" value="" placeholder="7">
+          <label>Возраст (лет):</label>
+          <input id="age" type="text" name="age" value="" placeholder="7">
+          </div>
+        <div class="goal">
+          <ul class="goal__list">
+            <li class="goal__item radio">
+              <input id="radio-1" type="radio" name="goal" value="Похудение" checked>
+              <label for="radio-1">Похудение</label>
+            </li>
+            <li class="goal__item radio">
+              <input id="radio-2" type="radio" name="goal" value="Набор массы">
+              <label for="radio-2">Набор массы</label>
+            </li>
+            <li class="goal__item radio">
+              <input id="radio-3" type="radio" name="goal" value="Не знаю (нужен ваш совет)">
+              <label for="radio-3">Не знаю (нужен ваш совет)</label>
+            </li>
+            </ul>
+          </div>
+          <div class="about-you">
+            <h3>Контактные данные (владельца кота)</h3>
+            <label for="email">E-mail:<sup>*</sup></label>
+            <input id="email" type="email" name="email" value="" placeholder="kuklachev@gmail.com">
+            <label for="telephone">Телефон:<sup>*</sup></label>
+            <input id="telephone" type="tel" name="telephone" value="" placeholder="8 (960) 900-60-90">
+          </div>
+          <div class="comments">
+            <h3>Комментарий</h3>
+            <label for="comment"></label>
+            <input id="comment" type="text" name="comment" value="" placeholder="Расскажите обо всех повадках кота">
+          </div>
+          <div class="add-info">
+            <ul class="add-info__list">
+              <li class="add-info__item checkbox">
+                <input id="checkbox-1" type="checkbox" name="add-info" value="Сахарозаменитель" checked>
+                <label for="checkbox-1">Сахарозаменитель</label>
+              </li>
+              <li class="goal__item checkbox">
+                <input id="checkbox-2" type="checkbox" name="add-info" value="Питьевая вода">
+                <label for="checkbox-2">Питьевая вода</label>
+              </li>
+              <li class="goal__item checkbox">
+                <input id="checkbox-3" type="checkbox" name="add-info" value="Молоко">
+                <label for="checkbox-3">Молоко</label>
+              </li>
+              <li class="goal__item checkbox">
+                  <input id="checkbox-4" type="checkbox" name="add-info" value="Витамины">
+                  <label for="checkbox-4">Витамины</label>
+              </li>
+            </ul>
+          </div>
+          <small class="prog-selection__text"><sup>*</sup> — Обязательные поля</small>
+          <button class="prog-selection__submit button" type="submit">Отправить заявку</button>
+      </form>
+
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__contacts contacts">
+          <b class="contacts__ad">Приглашаем к сотрудничеству дилеров!</b>
+          <p class="contacts__info">Ул. Большая Конюшенная, д. 19/8</p>
+          <p class="contacts__info">Санкт-Петербург</p>
+      </div>
+      <iframe class="contacts__map address__form modal-form"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002762!2d30.320858715618378!3d59.93871916905475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1552763791390"
+      allowfullscreen></iframe>
+      <div class="page-footer__social-footer">
+          <a class="page-footer__logo">
+              <img class="page-footer__logo-image" src="" width="" height="" alt="Cat Energy">
+            </a>
+          <div class="page-footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--vk" href="https://vk.com/cat_energy">Мы в VK</a>
+              </li>
+              <li class="social__item">
+                  <a class="social__link social__link--insta" href="https://instagram.com/cat_energy">Мы в Instagram</a>
+              </li>
+              <li class="social__item">
+                  <a class="social__link social__link--fb" href="https://facebook.com/cat_energy">Мы в Facebook</a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__copyright copyright">
+            <b class="copyright__text">HTML Academy</b>
+            <a class="copyright__link button" href="https://htmlacademy.ru/intesive/adaptive">HTML Academy</a>
+          </div>
+      </div>
+  </footer>
+
+</body>
+</html>
