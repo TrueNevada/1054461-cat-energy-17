@@ -1,0 +1,135 @@
+.variation-card {
+  width: 280px;
+  min-height: 266px;
+  margin-top: 30px;
+  margin-bottom: 22px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: #f2f2f2;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.variation-card:nth-child(2) {
+  margin-top: 0;
+}
+
+.variation-card__title--slim {
+  position: relative;
+  width: 170px;
+  padding-top: 39px;
+  padding-left: 95px;
+  margin: 0;
+  font-family: "Oswald";
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+}
+
+.variation-card__title--slim::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #68b738;
+
+  top: 30px;
+  left: 25px;
+
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.variation-card__title--slim::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("..//img/icon-cat-slim.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  top: 30px;
+  left: 35px;
+
+  width: 35px;
+  height: 49px;
+}
+
+.variation-card__title--pro {
+  position: relative;
+  width: 280px;
+  padding-top: 39px;
+  padding-left: 55px;
+  margin: 0;
+  font-family: "Oswald";
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+}
+
+.variation-card__title--pro::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #68b738;
+
+  top: 30px;
+  left: 25px;
+
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.variation-card__title--pro::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("..//img/icon-cat-pro.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  top: 40px;
+  left: 15px;
+
+  width: 67px;
+  height: 28px;
+}
+
+.variation-card__description {
+  padding: 0 20px;
+  padding-bottom: 25px;
+  margin-bottom: 22px;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.variation-card__link {
+  position: relative;
+  font-family: "Oswald";
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  padding-left: 20px;
+}
+
+.variation-card__link::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("..//img/icon-right-arrow-long.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  top: 7px;
+  right: -40px;
+
+  width: 24px;
+  height: 11px;
+}
+

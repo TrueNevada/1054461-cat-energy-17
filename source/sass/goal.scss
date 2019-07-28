@@ -1,0 +1,64 @@
+.goal {
+  width: 320px;
+}
+
+.goal__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.radio {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.radio input[type="radio"] {
+  opacity: 0;
+}
+
+.radio label {
+  margin-left: 5px;
+  position: relative;
+  font-family: "Oswald";
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.radio label::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -33px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid;
+  border-radius: 50%;
+  vertical-align: middle;
+  opacity: 0.3;
+}
+
+.radio label::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -24px;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #68b738;
+  vertical-align: middle;
+}
+
+.radio input[type="radio"]+label::after {
+  content: none;
+}
+
+.radio input[type="radio"]:checked+label::after {
+  content: "";
+}

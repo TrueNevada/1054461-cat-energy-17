@@ -1,0 +1,27 @@
+.cat-info {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cat-info__field {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+}
+
+.cat-info__type {
+  margin-top: 8px;
+  font-family: "Oswald";
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.cat-info__value {
+  height: 45px;
+  font-family: "Oswald";
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
