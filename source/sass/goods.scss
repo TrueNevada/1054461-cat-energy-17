@@ -1,0 +1,88 @@
+.goods {
+  width: 320px;
+}
+
+.goods__title {
+  padding: 0 20px;
+  font-family: "Oswald";
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.goods__item {
+  width: 320px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.goods__item-caption {
+  margin: 10px 0;
+  font-family: "Oswald";
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.goods__item-info {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.goods__item-type {
+  text-align: left;
+}
+
+.goods__item-value {
+  text-align: right;
+}
+
+.goods__link {
+  width: 280px;
+  height: 40px;
+  padding: 10px 73px;
+  margin-top: 10px;
+  background-color: #68b738;
+
+  font-family: "Oswald";
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.goods__gift {
+  width: 320px;
+  padding: 0 20px;
+  position: relative;
+  background-image: url("..//img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 20px 0;
+
+  min-height: 280px;
+}
+
+.goods__gift::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("..//img/icon-gift.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  top: 65px;
+  left: 135px;
+
+  width: 55px;
+  height: 60px;
+}
+
+.goods__gift-description {
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-align: center;
+}
