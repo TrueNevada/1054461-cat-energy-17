@@ -1,0 +1,62 @@
+.achievements {
+  width: 320px;
+  padding: 0 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f2f2f2;
+  margin-bottom: 30px;
+}
+
+.achievements__title {
+  margin: 0;
+  font-family: "Oswald";
+  font-size: 36px;
+  line-height: 60px;
+  color: #000000;
+}
+
+.achievemnts__item-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.achievements__item {
+  display: flex;
+  flex-direction: column;
+  width: 121px;
+  min-height: 56px;
+  padding: 20px 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: none;
+  border-radius: 5%;
+}
+
+.achievements__item-title {
+  width: 80px;
+  font-family: "Oswald";
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 12px;
+  color: #000000;
+}
+
+.achievements__item-description {
+  width: 80px;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  margin: 0;
+}
+
+.achievements__text {
+  font-family: "Oswald";
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  color: #000000;
+}

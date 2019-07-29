@@ -1,0 +1,46 @@
+.prog-selection {
+  width: 320px;
+  padding: 0 20px;
+}
+
+.prog-selection__title {
+  font-family: "Oswald";
+  font-size: 36px;
+  line-height: 60px;
+  color: #000000;
+  margin: 0;
+}
+
+.prog-selection__description {
+  font-family: "Oswald";
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 40px 0;
+}
+
+.prog-selection__submit {
+  width: 280px;
+  height: 40px;
+  padding: 10px 73px;
+  margin-bottom: 20px;
+  background-color: #68b738;
+
+  font-family: "Oswald";
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  border: none;
+}
+
+.prog-selection__text {
+  width: 160px;
+  margin: 0 55px;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  margin-bottom: 20px;
+}
