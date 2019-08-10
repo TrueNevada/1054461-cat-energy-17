@@ -1,14 +1,18 @@
-.prog-selection {
-  width: 320px;
-  padding: 0 20px;
-}
-
 .prog-selection__title {
   font-family: "Oswald";
   font-size: 36px;
   line-height: 60px;
   color: #000000;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 40px;
+  }
 }
 
 .prog-selection__description {
@@ -18,6 +22,20 @@
   text-transform: uppercase;
   color: #000000;
   margin: 40px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 40px;
+  }
+}
+
+.prog-selection__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .prog-selection__submit {
@@ -34,13 +52,33 @@
   text-transform: uppercase;
   text-align: center;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    margin: 20px 40px;
+    margin-top: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 568px;
+    height: 52px;
+    padding: 16px 143px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .prog-selection__text {
   width: 160px;
   margin: 0 55px;
+  margin-bottom: 20px;
   font-size: 14px;
   line-height: 16px;
   text-align: center;
-  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+    margin: 0;
+  }
 }

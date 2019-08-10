@@ -1,17 +1,40 @@
 .add-info {
-  width: 320px;
+  @media (min-width: $tablet-width) {
+    margin: 40px 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 40px 55px;
+  }
 }
 
 .add-info__list {
   padding: 0;
   margin: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
 
 .checkbox {
   margin: 0;
   margin-bottom: 20px;
   margin-left: 13px;
+
+  @media (min-width: $tablet-width) {
+    width: 40%;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 20%;
+    margin: 0;
+  }
 }
 
 .checkbox input[type="checkbox"] {
@@ -19,33 +42,43 @@
 }
 
 .checkbox label {
-  margin-left: 5px;
+  margin-left: 15px;
   position: relative;
   font-family: "Oswald";
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .checkbox label::before {
   content: "";
   position: absolute;
   top: -4px;
-  left: -33px;
+  left: -52px;
   display: inline-block;
   width: 30px;
   height: 30px;
   border: 1px solid;
   vertical-align: middle;
   opacity: 0.3;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .checkbox label::after {
   content: "";
   position: absolute;
-  top: 5px;
-  left: -28px;
+  top: 7px;
+  left: -41px;
   width: 21px;
   height: 16px;
   background-image: url("../img/icon-tick.svg");

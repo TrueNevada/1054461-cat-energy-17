@@ -1,12 +1,16 @@
 .variation-card {
-  width: 280px;
   min-height: 266px;
-  margin-top: 30px;
-  margin-bottom: 22px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 25px 0;
   background-color: #f2f2f2;
   font-family: Arial, Helvetica, sans-serif;
+
+  @media (min-width: $tablet-width) {
+    min-height: 372px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
 }
 
 .variation-card:nth-child(2) {
@@ -25,6 +29,22 @@
   text-transform: uppercase;
   text-align: center;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    width: 245px;
+    font-size: 36px;
+    line-height: 37px;
+    padding-top: 81px;
+    padding-left: 52px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0;
+    margin: 80px 150px;
+    margin-bottom: 0;
+    text-align: center;
+  }
 }
 
 .variation-card__title--slim::before {
@@ -39,6 +59,22 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    top: 80px;
+    left: 450px;
+
+    width: 200px;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 100px;
+
+    top: -30px;
+    left: -100px;
+  }
 }
 
 .variation-card__title--slim::after {
@@ -54,6 +90,22 @@
 
   width: 35px;
   height: 49px;
+
+  @media (min-width: $tablet-width) {
+    top: 60px;
+    left: 465px;
+
+    width: 140px;
+    height: 194px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 70px;
+    height: 97px;
+
+    top: -35px;
+    left: -85px;
+  }
 }
 
 .variation-card__title--pro {
@@ -62,12 +114,29 @@
   padding-top: 39px;
   padding-left: 55px;
   margin: 0;
+
   font-family: "Oswald";
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
   text-align: center;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    width: 290px;
+    font-size: 36px;
+    line-height: 37px;
+    padding-top: 81px;
+    padding-left: 52px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0;
+    margin: 80px 150px;
+    margin-bottom: 0;
+    text-align: center;
+  }
 }
 
 .variation-card__title--pro::before {
@@ -82,6 +151,22 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    top: 80px;
+    left: 450px;
+
+    width: 200px;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 100px;
+
+    top: -30px;
+    left: -100px;
+  }
 }
 
 .variation-card__title--pro::after {
@@ -97,6 +182,22 @@
 
   width: 67px;
   height: 28px;
+
+  @media (min-width: $tablet-width) {
+    width: 268px;
+    height: 112px;
+
+    top: 120px;
+    left: 410px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
+    height: 56px;
+
+    top: -10px;
+    left: -125px;
+  }
 }
 
 .variation-card__description {
@@ -107,6 +208,20 @@
   line-height: 18px;
   text-align: left;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+  @media (min-width: $tablet-width) {
+    width: 480px;
+    padding: 0 52px;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0;
+    margin: 75px 50px;
+    margin-bottom: 30px;
+  }
 }
 
 .variation-card__link {
@@ -115,7 +230,14 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
-  padding-left: 20px;
+  padding: 0 20px;
+  color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 0 52px;
+  }
 }
 
 .variation-card__link::before {
@@ -131,5 +253,10 @@
 
   width: 24px;
   height: 11px;
+
+  @media (min-width: $tablet-width) {
+    top: 10px;
+    right: -5px;
+  }
 }
 

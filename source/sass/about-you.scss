@@ -1,7 +1,10 @@
 .about-you {
-  width: 320px;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 40px;
+  }
 }
 
 .about-you__title {
@@ -10,12 +13,29 @@
   line-height: 24px;
   color: #000000;
   margin: 40px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.about-you__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .about-you__field {
   display: flex;
   flex-direction: row;
   margin-bottom: 15px;
+
+  @media (min-width: $desktop-width) {
+    width: 45%;
+  }
 }
 
 .about-you__type {
@@ -24,12 +44,26 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 72px;
+    font-size: 20px;
+    line-height: 20px;
+    margin-right: 18px;
+  }
 }
 
 .about-you__value {
+  width: 100%;
   height: 45px;
   font-family: "Oswald";
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
 }

@@ -1,18 +1,11 @@
-.goods {
-  width: 320px;
-}
-
 .goods__title {
-  padding: 0 20px;
-  font-family: "Oswald";
+ font-family: "Oswald";
   font-size: 24px;
   line-height: 24px;
   color: #000000;
 }
 
 .goods__item {
-  width: 320px;
-  padding: 0 20px;
   display: flex;
   flex-direction: column;
 }
@@ -55,12 +48,10 @@
 }
 
 .goods__gift {
-  width: 320px;
-  padding: 0 20px;
   position: relative;
   background-image: url("..//img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 20px 0;
+  background-position: 0 0;
 
   min-height: 280px;
 }
@@ -74,7 +65,7 @@
   background-position: 0 0;
 
   top: 65px;
-  left: 135px;
+  left: 115px;
 
   width: 55px;
   height: 60px;
