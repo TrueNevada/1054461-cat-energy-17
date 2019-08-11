@@ -46,7 +46,7 @@
 .radio label {
   margin-left: 15px;
   position: relative;
-  font-family: "Oswald";
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -102,10 +102,10 @@
   }
 }
 
-.radio input[type="radio"]+label::after {
+.radio input[type="radio"] + label::after {
   content: none;
 }
 
-.radio input[type="radio"]:checked+label::after {
+.radio input[type="radio"]:checked + label::after {
   content: "";
 }

@@ -7,7 +7,7 @@
 
   min-height: 305px;
 
-  font-family: "Oswald";
+  font-family: "Oswald", "Arial", sans-serif;
   color: #ffffff;
 
   @media (min-width: $tablet-width) {
@@ -16,7 +16,7 @@
     background-position: -30px 260px;
 
     min-height: 900px;
-    font-family: "Oswald";
+    font-family: "Oswald", "Arial", sans-serif;
     color: #000000;
   }
 
@@ -82,7 +82,7 @@
 
 .programs__description {
   width: 320px;
-  padding: 0px 30px;
+  padding: 0 30px;
   margin: 0;
   margin-bottom: 300px;
   font-size: 14px;
@@ -118,7 +118,7 @@
     width: 245px;
     height: 52px;
     padding: 11px 27px;
-    margin: 0px 60px;
+    margin: 0 60px;
 
     font-size: 20px;
     line-height: 20px;
