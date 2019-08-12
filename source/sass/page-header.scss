@@ -1,4 +1,9 @@
 .page-header {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+}
+
+.page-header__menu-toggle {
+  display: none;
 }

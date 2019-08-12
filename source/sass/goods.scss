@@ -1,34 +1,51 @@
-.goods {
-  width: 320px;
-}
-
 .goods__title {
-  padding: 0 20px;
-  font-family: "Oswald";
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 24px;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .goods__item {
-  width: 320px;
-  padding: 0 20px;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 30px 30px;
+  }
 }
 
 .goods__item-caption {
   margin: 10px 0;
-  font-family: "Oswald";
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+  }
 }
 
 .goods__item-info {
   font-size: 14px;
   line-height: 14px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .goods__item-type {
@@ -37,6 +54,10 @@
 
 .goods__item-value {
   text-align: right;
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }
 
 .goods__link {
@@ -46,35 +67,49 @@
   margin-top: 10px;
   background-color: #68b738;
 
-  font-family: "Oswald";
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 633px;
+    margin-top: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    margin: 0;
+  }
 }
 
 .goods__gift {
-  width: 320px;
-  padding: 0 20px;
   position: relative;
-  background-image: url("..//img/gift-photo-mobile@1x.jpg");
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 20px 0;
+  background-position: 0 0;
 
   min-height: 280px;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
 }
 
 .goods__gift::before {
   content: "";
   display: block;
   position: absolute;
-  background-image: url("..//img/icon-gift.svg");
+  background-image: url("../img/icon-gift.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 
   top: 65px;
-  left: 135px;
+  left: 115px;
 
   width: 55px;
   height: 60px;
@@ -85,4 +120,9 @@
   line-height: 20px;
   color: #ffffff;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 170px;
+    text-align: left;
+  }
 }
