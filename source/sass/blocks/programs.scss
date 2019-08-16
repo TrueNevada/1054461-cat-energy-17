@@ -21,10 +21,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1300px;
     background-image: url("../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
-    background-position: 595px 0;
+    background-position: 595px 0px;
   }
 }
 
@@ -76,13 +75,12 @@
     margin-bottom: 40px;
     font-size: 60px;
     line-height: 60px;
+    font-weight: 400;
     text-align: left;
   }
 }
 
 .programs__description {
-  width: 320px;
-  padding: 0 30px;
   margin: 0;
   margin-bottom: 300px;
   font-size: 14px;
@@ -105,7 +103,7 @@
   width: 280px;
   height: 40px;
   padding: 10px 73px;
-  margin: 20px 20px;
+  margin: 20px 0;
   background-color: #68b738;
 
   font-size: 14px;
@@ -127,7 +125,6 @@
 
 .programs__variations {
   @media (min-width: $desktop-width) {
-    width: 1300px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
