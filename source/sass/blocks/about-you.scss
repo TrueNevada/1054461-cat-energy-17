@@ -8,16 +8,53 @@
 }
 
 .about-you__title {
+  position: relative;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
   color: #000000;
-  margin: 40px 0;
+  margin: 0;
+  margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    margin-bottom: 76px;
+  }
+}
+
+.about-you__title::before {
+  content: "";
+  position: absolute;
+
+  top: 15px;
+  right: -20px;
+
+  width: 99px;
+  height: 3px;
+  background-color: #68b738;
+
+  @media (min-width: $tablet-width) {
+    width: 145px;
+    height: 3px;
+
+    top: 20px;
+    right: -70px;
+  }
+}
+
+.about-you__title::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+
+    width: 30px;
+    height: 3px;
+    background-color: #68b738;
+
+    top: 20px;
+    left: -70px;
   }
 }
 
@@ -32,7 +69,13 @@
 .about-you__field {
   display: flex;
   flex-direction: row;
-  margin-bottom: 15px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 18px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 45%;
@@ -40,17 +83,31 @@
 }
 
 .about-you__type {
-  margin-top: 8px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    width: 72px;
     font-size: 20px;
     line-height: 20px;
-    margin-right: 18px;
+  }
+}
+
+.about-you__type--email {
+  width: 52px;
+
+  @media (min-width: $tablet-width) {
+    width: 71px;
+  }
+}
+
+.about-you__type--tel {
+  width: 77px;
+  padding-top: 5px;
+
+  @media (min-width: $tablet-width) {
+    width: 96px;
   }
 }
 
@@ -65,5 +122,28 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
+    height: 52px;
+  }
+}
+
+.about-you__value--email {
+  width: 219px;
+  padding-left: 12px;
+
+  @media (min-width: $tablet-width) {
+    width: 551px;
+    padding-left: 23px;
+  }
+}
+
+.about-you__value--tel {
+  width: 204px;
+  padding-left: 12px;
+  padding-top: 5px;
+
+  @media (min-width: $tablet-width) {
+    width: 535px;
+    padding-left: 18px;
+    padding-top: 0;
   }
 }

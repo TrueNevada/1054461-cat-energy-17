@@ -10,7 +10,7 @@
 
     <header class="page-header container">
       <div class="page-header__menu">
-        <a class="page-header__logo">
+        <a class="page-header__logo" href="index.html">
           <picture>
             <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -26,7 +26,7 @@
                   <a href="index.html">Главная</a>
                 </li>
                 <li class="site-list__item">
-                  <a href="catalog.html">Каталог</a>
+                  <a href="catalog.html">Каталог продукции</a>
                 </li>
                 <li class="site-list__item">
                   <a href="form.html">Подбор программы</a>
@@ -63,7 +63,7 @@
                 </tr>
                 <tr class="catalog__item-field">
                   <td class="catalog__item-type">Цена</td>
-                  <td class="catalog__item-value">700 р.</td>
+                  <td class="catalog__item-value">700 Р.</td>
                 </tr>
               </table>
             </div>
@@ -88,7 +88,7 @@
                 </tr>
                 <tr class="catalog__item-field">
                   <td class="catalog__item-type">Цена</td>
-                  <td class="catalog__item-value">1000 р.</td>
+                  <td class="catalog__item-value">1000 Р.</td>
                 </tr>
               </table>
             </div>
@@ -113,7 +113,7 @@
                 </tr>
                 <tr class="catalog__item-field">
                   <td class="catalog__item-type">Цена</td>
-                  <td class="catalog__item-value">700 р.</td>
+                  <td class="catalog__item-value">700 Р.</td>
                 </tr>
               </table>
             </div>
@@ -138,13 +138,13 @@
                 </tr>
                 <tr class="catalog__item-field">
                   <td class="catalog__item-type">Цена</td>
-                  <td class="catalog__item-value">1000 р.</td>
+                  <td class="catalog__item-value">1000 Р.</td>
                 </tr>
               </table>
             </div>
             <a class="catalog__link button" href="order.html">Заказать</a>
           </article>
-          <article class="catalog__item">
+          <article class="catalog__item catalog__item--small-buckwheat">
             <picture>
               <source media="(min-width: 1300px)" srcset="img/buckwheat-small-desktop@1x.png">
               <source media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.png">
@@ -163,7 +163,7 @@
                 </tr>
                 <tr class="catalog__item-field">
                   <td class="catalog__item-type">Цена</td>
-                  <td class="catalog__item-value">400 р.</td>
+                  <td class="catalog__item-value">400 Р.</td>
                 </tr>
               </table>
             </div>
@@ -188,7 +188,7 @@
                 </tr>
                 <tr class="catalog__item-field">
                   <td class="catalog__item-type">Цена</td>
-                  <td class="catalog__item-value">700 р.</td>
+                  <td class="catalog__item-value">700 Р.</td>
                 </tr>
               </table>
             </div>
@@ -213,17 +213,17 @@
                 </tr>
                 <tr class="catalog__item-field">
                   <td class="catalog__item-type">Цена</td>
-                  <td class="catalog__item-value">500 р.</td>
+                  <td class="catalog__item-value">500 Р.</td>
                 </tr>
               </table>
             </div>
             <a class="catalog__link button" href="order.html">Заказать</a>
           </article>
           <article class="catalog__item catalog__item--show-more">
-            <button class="catalog__show-more button" type="button">Показать больше</button>
+            <a class="catalog__show-more button" href="show-more.html">Показать больше</a>
             <h4 class="catalog__item-caption catalog__item-caption-goods">Показать ещё 100500 товаров</h4>
             <p class="catalog__more-tastes">На самом деле вкусов гораздо больше!</p>
-            <button class="catalog__show-all button" type="submit">Показать всё</button>
+            <a class="catalog__show-all button" href="show-all.html">Показать всё</a>
           </article>
         </div>
       </section>
@@ -244,7 +244,7 @@
             </article>
             <article class="goods__item">
               <h4 class="goods__item-caption">Питьевая вода</h4>
-              <table class="goods__item-info">
+              <table class="goods__item-info goods__item-info--water">
                 <tr class="goods__item-field">
                   <td class="goods__item-type">5 литров</td>
                   <td class="goods__item-value">50 р.</td>
@@ -254,7 +254,7 @@
             </article>
             <article class="goods__item">
               <h4 class="goods__item-caption">Молоко</h4>
-              <table class="goods__item-info">
+              <table class="goods__item-info goods__item-info--milk">
                 <tr class="goods__item-field">
                   <td class="goods__item-type">1 литр</td>
                   <td class="goods__item-value">100 р.</td>
@@ -264,7 +264,7 @@
             </article>
             <article class="goods__item">
               <h4 class="goods__item-caption">Витамины</h4>
-              <table class="goods__item-info">
+              <table class="goods__item-info goods__item-info--vit">
                 <tr class="goods__item-field">
                   <td class="goods__item-type">1 упаковка (30 г)</td>
                   <td class="goods__item-value">300 р.</td>
@@ -274,7 +274,7 @@
             </article>
           </div>
           <div class="goods__gift">
-            <p class="goods__gift-description">Закажите всё и получите чехол для кота в подарок!</p>
+            <p class="goods__gift-description">Закажите всё и&nbsp;получите чехол для кота в подарок!</p>
           </div>
         </div>
 
@@ -284,8 +284,8 @@
 
     <footer class="page-footer">
       <div class="page-footer__contacts container">
-          <b class="contacts__offer">Приглашаем к сотрудничеству дилеров!</b>
-          <p class="contacts__info">Ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <b class="contacts__offer">Приглашаем к&nbsp;сотрудничеству дилеров!</b>
+        <p class="contacts__info">Ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
       <iframe class="page-footer__map map"
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002762!2d30.320858715618378!3d59.93871916905475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1552763791390"
