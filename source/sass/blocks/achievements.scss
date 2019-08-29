@@ -1,0 +1,199 @@
+.achievements {
+  font-family: "Arial", sans-serif;
+  background-color: #f2f2f2;
+  margin-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    background-color: #ffffff;
+    margin-bottom: 35px;
+  }
+}
+
+.achievements__wrapper {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 88px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.achievements__title {
+  margin: 0;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+  color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.achievements__description {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+  margin-top: 22px;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    width: 700px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 65px;
+    margin-bottom: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 435px;
+    margin-top: 145px;
+    margin-bottom: 67px;
+  }
+}
+
+.achievements__item-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  }
+}
+
+.achievements__item-wrapper-wrapper {
+  width: 280px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    width: 368px;
+  }
+}
+
+.achievements__item {
+  display: flex;
+  flex-direction: column;
+  width: 124px;
+  padding-top: 14px;
+  margin: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5%;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+
+    width: 162px;
+    padding-top: 16px;
+    min-height: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+
+    top: 3px;
+  }
+}
+
+.achievements__item-description {
+  position: relative;
+  top: 7px;
+  left: 21px;
+  width: 80px;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  text-transform: none;
+  margin: 0;
+  background-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    width: 140px;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: #ffffff;
+    left: 10px;
+    top: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: #f2f2f2;
+  }
+}
+
+.achievements__text {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 25px 46px;
+  margin-bottom: 35px;
+  color: #000000;
+
+  @media (min-width: $tablet-width) {
+    width: 190px;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: right;
+    margin: 0;
+    margin-top: 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    text-align: left;
+    margin-top: 58px;
+  }
+}
+
+.achievements__compare {
+  @media (min-width: $tablet-width) {
+    background: linear-gradient(to bottom, #ffffff 26%, #f2f2f2 26%);
+  }
+
+  @media (min-width: $desktop-width) {
+    background: transparent;
+  }
+}
+
+.achievements__compare-image {
+  width: 100%;
+  height: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: 515px;
+    padding: 0 46px;
+    align-self: center;
+  }
+}
+
+.achievements__compare-toggles {
+  margin-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 20px;
+    padding-bottom: 65px;
+  }
+}
+

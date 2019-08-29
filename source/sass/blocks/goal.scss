@@ -1,0 +1,114 @@
+.goal {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-left: none;
+  border-right: none;
+  margin: 0;
+  padding: 25px 0;
+  margin: 0 15px;
+
+  @media (min-width: $tablet-width) {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 50px 40px;
+    margin-bottom: 75px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding-bottom: 0;
+    width: 45%;
+  }
+}
+
+.goal__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.radio {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+}
+
+.radio--advice {
+  margin-bottom: 0;
+}
+
+.radio input[type="radio"] {
+  opacity: 0;
+}
+
+.radio label {
+  margin-left: 15px;
+  position: relative;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+
+    margin-left: 70px;
+  }
+}
+
+.radio label::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -47px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid;
+  border-radius: 50%;
+  vertical-align: middle;
+  opacity: 0.3;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+
+    top: -8px;
+    left: -60px;
+  }
+}
+
+.radio label::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -38px;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #68b738;
+  vertical-align: middle;
+
+  @media (min-width: $tablet-width) {
+    width: 18px;
+    height: 18px;
+
+    top: 4px;
+    left: -49px;
+  }
+}
+
+.radio input[type="radio"] + label::after {
+  content: none;
+}
+
+.radio input[type="radio"]:checked + label::after {
+  content: "";
+}

@@ -1,0 +1,247 @@
+.goods {
+  margin-bottom: 33px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 75px;
+  }
+}
+
+.goods__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+  margin-top: 25px;
+  margin-bottom: 41px;
+
+  @media (min-width: $tablet-width) {
+    margin: 62px 37px 107px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 70px 0 65px;
+  }
+}
+
+.goods__list {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 45px;
+  }
+}
+
+.goods__wrapper {
+  @media (min-width: $desktop-width) {
+    width: 893px;
+  }
+}
+
+.goods__item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 30px 36px 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-items: center;
+    margin: 32px 0;
+  }
+}
+
+.goods__item-caption {
+  margin-top: 10px;
+  margin-bottom: 12px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 246px;
+  }
+}
+
+.goods__item-info {
+  font-size: 14px;
+  line-height: 14px;
+  margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    width: 227px;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 5px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 285px;
+    margin-left: 45px;
+  }
+}
+
+.goods__item-info--water {
+  @media (min-width: $tablet-width) {
+    width: 162px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 285px;
+  }
+}
+
+.goods__item-info--milk {
+  @media (min-width: $tablet-width) {
+    width: 142px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 285px;
+  }
+}
+
+.goods__item-info--vit {
+  @media (min-width: $tablet-width) {
+    width: 216px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 285px;
+  }
+}
+
+.goods__item-type {
+  text-align: left;
+
+  @media (min-width: $desktop-width) {
+    width: 80%;
+  }
+}
+
+.goods__item-value {
+  text-align: right;
+  text-transform: uppercase;
+
+  @media (min-width: $desktop-width) {
+    text-align: right;
+  }
+}
+
+.goods__link {
+  width: 280px;
+  height: 40px;
+  padding: 10px 73px;
+  background-color: #68b738;
+
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 633px;
+    margin-top: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    margin: 0;
+  }
+}
+
+.goods__gift {
+  position: relative;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  min-height: 290px;
+
+  margin-top: 55px;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    min-height: 200px;
+    margin: 98px 0 111px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    min-height: 289px;
+    margin: 0;
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+
+.goods__gift::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("../img/icon-gift.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  top: 65px;
+  left: 115px;
+
+  width: 55px;
+  height: 60px;
+
+  @media (min-width: $tablet-width) {
+    left: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 100px;
+  }
+}
+
+.goods__gift-description {
+  position: relative;
+
+  top: 188px;
+  left: 55px;
+
+  width: 170px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    top: 72px;
+    left: 425px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+    top: 170px;
+    left: 40px;
+  }
+}

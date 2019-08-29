@@ -1,0 +1,305 @@
+.variation-card {
+  min-height: 266px;
+  margin-bottom: 25px;
+  background-color: #f2f2f2;
+  font-family: "Arial", sans-serif;
+
+  @media (min-width: $tablet-width) {
+    min-height: 372px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
+}
+
+.variation-card:nth-child(2) {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 25px;
+  }
+}
+
+.variation-card__title--slim {
+  position: relative;
+  width: 170px;
+  padding-top: 39px;
+  padding-left: 92px;
+  margin: 0;
+  margin-bottom: 29px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+
+  @media (min-width: $tablet-width) {
+    width: 245px;
+    font-size: 36px;
+    line-height: 37px;
+    padding-top: 75px;
+    padding-left: 52px;
+    margin-bottom: 28px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0;
+    margin: 78px 172px;
+    margin-bottom: 0;
+    text-align: center;
+  }
+}
+
+.variation-card__title--slim::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #68b738;
+
+  top: 32px;
+  left: 22px;
+
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    top: 92px;
+    left: 445px;
+
+    width: 200px;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 100px;
+
+    top: -30px;
+    left: -120px;
+  }
+}
+
+.variation-card__title--slim::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("..//img/icon-cat-slim.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  top: 32px;
+  left: 32px;
+
+  width: 35px;
+  height: 49px;
+
+  @media (min-width: $tablet-width) {
+    top: 80px;
+    left: 475px;
+
+    width: 140px;
+    height: 194px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 70px;
+    height: 97px;
+
+    top: -35px;
+    left: -105px;
+  }
+}
+
+.variation-card__title--pro {
+  position: relative;
+  width: 280px;
+  padding-top: 33px;
+  padding-left: 42px;
+  margin: 0;
+  margin-bottom: 29px;
+
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+
+  @media (min-width: $tablet-width) {
+    width: 290px;
+    font-size: 36px;
+    line-height: 37px;
+    padding-top: 81px;
+    padding-left: 52px;
+    margin-bottom: 27px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0;
+    margin: 78px 170px;
+    margin-bottom: 0;
+    text-align: center;
+  }
+}
+
+.variation-card__title--pro::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #68b738;
+
+  top: 28px;
+  left: 22px;
+
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    top: 96px;
+    left: 450px;
+
+    width: 200px;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 100px;
+
+    top: -30px;
+    left: -120px;
+  }
+}
+
+.variation-card__title--pro::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("..//img/icon-cat-pro.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  top: 38px;
+  left: 14px;
+
+  width: 67px;
+  height: 28px;
+
+  @media (min-width: $tablet-width) {
+    width: 268px;
+    height: 112px;
+
+    top: 140px;
+    left: 410px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
+    height: 56px;
+
+    top: -8px;
+    left: -135px;
+  }
+}
+
+.variation-card__description {
+  padding: 0 20px;
+  padding-bottom: 29px;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+
+  @media (min-width: $tablet-width) {
+    width: 480px;
+    padding: 0 52px;
+    margin-bottom: 53px;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0;
+    margin: 75px 50px;
+    margin-bottom: 30px;
+  }
+}
+
+.variation-card__description--pro {
+  padding: 0 20px;
+  padding-bottom: 29px;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+
+  @media (min-width: $tablet-width) {
+    width: 445px;
+    padding: 0 52px;
+    margin-bottom: 53px;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0;
+    margin: 75px 50px;
+    margin-bottom: 30px;
+  }
+}
+
+.variation-card__link {
+  position: relative;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  padding: 0 20px;
+  color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 0 52px;
+  }
+}
+
+.variation-card__link::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("../img/icon-right-arrow-long.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  top: 7px;
+  right: -15px;
+
+  width: 24px;
+  height: 11px;
+
+  @media (min-width: $tablet-width) {
+    top: 10px;
+    right: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    right: 5px;
+  }
+}
