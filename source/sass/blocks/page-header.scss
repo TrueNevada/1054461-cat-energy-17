@@ -16,20 +16,6 @@
   }
 }
 
-.page-header__logo {
-  width: 70%;
-
-  @media (min-width: $tablet-width) {
-    width: 100%;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 202px;
-    height: 59px;
-    object-fit: contain;
-  }
-}
-
 .page-header__menu {
   width: 100%;
   display: flex;
@@ -38,15 +24,23 @@
   margin-bottom: 12px;
 
   @media (min-width: $tablet-width) {
-    width: 25%;
+    width: 174px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0;
+    width: 203px;
+  }
+}
+
+.page-header__logo-image {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    height: auto;
   }
 }
 
 .page-header__menu-toggle {
+  display: none;
   position: relative;
   background-color: transparent;
   border: none;

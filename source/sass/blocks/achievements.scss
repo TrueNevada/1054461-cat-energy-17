@@ -1,7 +1,8 @@
 .achievements {
   font-family: "Arial", sans-serif;
   background-color: #f2f2f2;
-  margin-bottom: 31px;
+  padding-top: 30px;
+  padding-bottom: 31px;
 
   @media (min-width: $tablet-width) {
     background-color: #ffffff;
@@ -167,6 +168,8 @@
 }
 
 .achievements__compare {
+  position: relative;
+
   @media (min-width: $tablet-width) {
     background: linear-gradient(to bottom, #ffffff 26%, #f2f2f2 26%);
   }
@@ -176,24 +179,78 @@
   }
 }
 
-.achievements__compare-image {
+.slider__item--after {
+  overflow: hidden;
   width: 100%;
-  height: auto;
-
-  @media (min-width: $tablet-width) {
-    width: 768px;
-    height: 515px;
-    padding: 0 46px;
-    align-self: center;
-  }
 }
 
-.achievements__compare-toggles {
-  margin-top: 25px;
-
-  @media (min-width: $tablet-width) {
-    margin-top: 20px;
-    padding-bottom: 65px;
-  }
+.slider__image {
+  width: 100%;
 }
 
+.slider__image--after {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.slider__bar-container {
+  display: flex;
+  justify-content: center;
+}
+
+.slider__bar-wrapper {
+  width: 198px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.slider__bar {
+  -webkit-appearance: none;
+  width: 82px;
+  height: 12px;
+  border-radius: 5px;
+  border: 1px solid #cdcdcd;
+  background-color: #ffffff;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  order: 1;
+  padding: 0 10px;
+}
+
+.slider__bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 35px;
+  height: 6px;
+  border-radius: 5px;
+  background-color: #68b738;
+  border: 0;
+  cursor: pointer;
+}
+
+.slider__button {
+  order: 0;
+
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+}
+
+.slider__button--after {
+  order: 2;
+
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+}

@@ -1,6 +1,29 @@
 .programs {
+  margin-bottom: 17px;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 49px;
+  }
+}
+
+.programs::before {
+  @media (min-width: $desktop-width) {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: contain;
+    background-color: #65a93c;
+
+    height: 696px;
+
+    top: 0;
+    left: 50%;
+    right: 0;
+
+    z-index: -1;
   }
 }
 
@@ -32,25 +55,6 @@
     background-image: none;
     padding: 0;
     margin-bottom: 280px;
-  }
-}
-
-.programs__header::before {
-  @media (min-width: $desktop-width) {
-    content: "";
-    display: block;
-    position: absolute;
-    background-image: url("../img/index-background-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-
-    width: 720px;
-    height: 696px;
-
-    top: -205px;
-    left: 650px;
-
-    z-index: -1;
   }
 }
 
@@ -119,7 +123,7 @@
 
 .programs__description {
   margin: 0;
-  margin-bottom: 315px;
+  margin-bottom: 312px;
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
