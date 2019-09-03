@@ -2,8 +2,7 @@
   margin-bottom: 38px;
 
   @media (min-width: $tablet-width) {
-    margin: 62px 40px;
-    margin-bottom: 0;
+    margin: 63px 40px 11px;
   }
 
   @media (min-width: $desktop-width) {
@@ -19,7 +18,7 @@
   font-weight: 400;
   color: #000000;
   margin: 0;
-  margin-bottom: 42px;
+  margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -38,6 +37,26 @@
   width: 136px;
   height: 3px;
   background-color: #68b738;
+
+  @media (min-width: $tablet-width) {
+    width: 446px;
+    top: 22px;
+    right: -70px;
+  }
+}
+
+.add-info__title::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+
+    width: 30px;
+    height: 3px;
+    background-color: #68b738;
+
+    top: 22px;
+    left: -70px;
+  }
 }
 
 .add-info__list {
@@ -49,7 +68,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
     flex-wrap: wrap;
   }
 }
@@ -62,13 +80,25 @@
   @media (min-width: $tablet-width) {
     width: 240px;
     margin-bottom: 50px;
-    margin-left: 0;
+    margin-left: 40px;
     text-align: left;
   }
 
   @media (min-width: $desktop-width) {
     width: 20%;
     margin: 0;
+  }
+}
+
+.checkbox--sugar {
+  @media (min-width: $tablet-width) {
+    margin-right: 65px;
+  }
+}
+
+.checkbox--milk {
+  @media (min-width: $tablet-width) {
+    margin-right: 65px;
   }
 }
 
@@ -95,7 +125,7 @@
 .checkbox label::before {
   content: "";
   position: absolute;
-  top: -4px;
+  top: -3px;
   left: -45px;
   display: inline-block;
   width: 30px;
@@ -107,19 +137,26 @@
   @media (min-width: $tablet-width) {
     width: 40px;
     height: 40px;
+    top: -4px;
+    left: -57px;
   }
 }
 
 .checkbox label::after {
   content: "";
   position: absolute;
-  top: 7px;
+  top: 5px;
   left: -41px;
   width: 21px;
   height: 16px;
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+
+  @media (min-width: $tablet-width) {
+    top: 8px;
+    left: -48px;
+  }
 }
 
 .checkbox input[type="checkbox"] + label::after {
