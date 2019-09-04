@@ -1,24 +1,31 @@
 .cat-info {
   display: flex;
   flex-direction: column;
+  margin-bottom: 10px;
 
   @media (min-width: $tablet-width) {
     margin: 0 40px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 45%;
-    margin-right: 0;
+    width: 570px;
+    margin: 0;
   }
 }
 
 .cat-info__field {
   display: flex;
   flex-direction: row;
-  margin-bottom: 15px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 21px;
+  }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 22px;
+    margin-bottom: 20px;
   }
 }
 
@@ -29,31 +36,105 @@
 }
 
 .cat-info__type {
-  margin-top: 8px;
+  width: 42px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  color: #000000;
 
   @media (min-width: $tablet-width) {
+    width: 53px;
+
     font-size: 20px;
     line-height: 20px;
+  }
+}
 
-    margin-right: 16px;
+.cat-info__type--weight {
+  width: 60px;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+  }
+}
+
+.cat-info__type--age {
+  width: 95px;
+  padding-top: 5px;
+
+  @media (min-width: $tablet-width) {
+    width: 129px;
+    padding-top: 0;
   }
 }
 
 .cat-info__value {
-  width: 100%;
+  width: 229px;
   height: 45px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  padding-left: 12px;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 1;
+    border-color: #000000;
+  }
+
+  &:invalid {
+    opacity: 1;
+    border-color: #ff8282;
+  }
 
   @media (min-width: $tablet-width) {
+    width: 567px;
     font-size: 20px;
     line-height: 20px;
     height: 52px;
+    padding-left: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 506px;
+  }
+}
+
+.cat-info__value--weight {
+  width: 204px;
+  padding-left: 12px;
+
+  @media (min-width: $tablet-width) {
+    width: 536px;
+    padding-bottom: 5px;
+    padding-left: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 475px;
+  }
+}
+
+.cat-info__value--age {
+  width: 172px;
+  padding-left: 12px;
+  padding-top: 5px;
+
+  @media (min-width: $tablet-width) {
+    width: 497px;
+    padding-top: 0;
+    padding-bottom: 5px;
+    padding-left: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 436px;
   }
 }

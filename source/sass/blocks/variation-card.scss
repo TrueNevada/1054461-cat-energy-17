@@ -1,32 +1,35 @@
 .variation-card {
   min-height: 266px;
-  margin: 25px 0;
+  margin-bottom: 22px;
   background-color: #f2f2f2;
   font-family: "Arial", sans-serif;
 
   @media (min-width: $tablet-width) {
+    position: relative;
+    top: -30px;
     min-height: 372px;
   }
 
   @media (min-width: $desktop-width) {
     width: 570px;
+    top: 0;
   }
 }
 
-.variation-card:nth-child(2) {
-  margin-top: 0;
+.variation-card--pro {
+  margin: 0;
 
   @media (min-width: $desktop-width) {
-    margin-top: 25px;
+    margin-bottom: 25px;
   }
 }
 
 .variation-card__title--slim {
   position: relative;
   width: 170px;
-  padding-top: 39px;
-  padding-left: 95px;
-  margin: 0;
+  padding-top: 30px;
+  padding-left: 92px;
+  margin: 32px 0 29px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 37px;
@@ -39,14 +42,15 @@
     width: 245px;
     font-size: 36px;
     line-height: 37px;
-    padding-top: 81px;
+    padding-top: 75px;
     padding-left: 52px;
+    margin-bottom: 25px;
     text-align: left;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0 0;
-    margin: 80px 150px;
+    margin: 78px 172px;
     margin-bottom: 0;
     text-align: center;
   }
@@ -58,16 +62,16 @@
   position: absolute;
   background-color: #68b738;
 
-  top: 30px;
-  left: 25px;
+  top: 25px;
+  left: 22px;
 
   width: 50px;
   height: 50px;
   border-radius: 50%;
 
   @media (min-width: $tablet-width) {
-    top: 80px;
-    left: 450px;
+    top: 92px;
+    left: 445px;
 
     width: 200px;
     height: 200px;
@@ -78,7 +82,7 @@
     height: 100px;
 
     top: -30px;
-    left: -100px;
+    left: -120px;
   }
 }
 
@@ -90,15 +94,15 @@
   background-repeat: no-repeat;
   background-position: 0 0;
 
-  top: 30px;
-  left: 35px;
+  top: 25px;
+  left: 30px;
 
   width: 35px;
   height: 49px;
 
   @media (min-width: $tablet-width) {
-    top: 60px;
-    left: 465px;
+    top: 80px;
+    left: 475px;
 
     width: 140px;
     height: 194px;
@@ -109,16 +113,17 @@
     height: 97px;
 
     top: -35px;
-    left: -85px;
+    left: -105px;
   }
 }
 
 .variation-card__title--pro {
   position: relative;
   width: 280px;
-  padding-top: 39px;
-  padding-left: 55px;
+  padding-top: 30px;
+  padding-left: 42px;
   margin: 0;
+  margin-bottom: 29px;
 
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
@@ -134,12 +139,13 @@
     line-height: 37px;
     padding-top: 81px;
     padding-left: 52px;
+    margin-bottom: 27px;
     text-align: left;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0 0;
-    margin: 80px 150px;
+    margin: 78px 170px;
     margin-bottom: 0;
     text-align: center;
   }
@@ -151,15 +157,15 @@
   position: absolute;
   background-color: #68b738;
 
-  top: 30px;
-  left: 25px;
+  top: 24px;
+  left: 22px;
 
   width: 50px;
   height: 50px;
   border-radius: 50%;
 
   @media (min-width: $tablet-width) {
-    top: 80px;
+    top: 96px;
     left: 450px;
 
     width: 200px;
@@ -171,7 +177,7 @@
     height: 100px;
 
     top: -30px;
-    left: -100px;
+    left: -120px;
   }
 }
 
@@ -183,8 +189,8 @@
   background-repeat: no-repeat;
   background-position: 0 0;
 
-  top: 40px;
-  left: 15px;
+  top: 34px;
+  left: 14px;
 
   width: 67px;
   height: 28px;
@@ -193,7 +199,7 @@
     width: 268px;
     height: 112px;
 
-    top: 120px;
+    top: 140px;
     left: 410px;
   }
 
@@ -201,23 +207,45 @@
     width: 134px;
     height: 56px;
 
-    top: -10px;
-    left: -125px;
+    top: -8px;
+    left: -135px;
   }
 }
 
 .variation-card__description {
   padding: 0 20px;
-  padding-bottom: 25px;
-  margin-bottom: 22px;
+  padding-bottom: 29px;
   font-size: 14px;
   line-height: 18px;
   text-align: left;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
   @media (min-width: $tablet-width) {
     width: 480px;
     padding: 0 52px;
+    margin-bottom: 53px;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0;
+    margin: 75px 50px;
+    margin-bottom: 30px;
+  }
+}
+
+.variation-card__description--pro {
+  padding: 0 20px;
+  padding-bottom: 29px;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+
+  @media (min-width: $tablet-width) {
+    width: 445px;
+    padding: 0 52px;
+    margin-bottom: 53px;
     font-size: 16px;
     line-height: 24px;
     border: none;
@@ -244,6 +272,10 @@
     line-height: 20px;
     padding: 0 52px;
   }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .variation-card__link::before {
@@ -255,19 +287,20 @@
   background-position: 0 0;
 
   top: 7px;
-  right: -40px;
+  right: -15px;
 
   width: 24px;
   height: 11px;
 
   @media (min-width: $tablet-width) {
     top: 10px;
-    right: -5px;
+    right: 5px;
   }
 
   @media (min-width: $desktop-width) {
     background-image: url("../img/icon-right-arrow-verylong.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
+    right: 5px;
   }
 }

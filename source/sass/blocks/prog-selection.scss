@@ -1,6 +1,11 @@
 .prog-selection {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+  }
+
   @media (min-width: $desktop-width) {
-    margin-top: 30px;
+    margin-top: 56px;
+    margin-bottom: 0;
   }
 }
 
@@ -10,15 +15,16 @@
   line-height: 60px;
   font-weight: 400;
   color: #000000;
-  margin: 0;
+  margin: 15px 0 17px;
 
   @media (min-width: $tablet-width) {
+    margin: 52px 0;
     font-size: 60px;
     line-height: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 40px;
+    margin: 68px 0 56px;
   }
 }
 
@@ -28,16 +34,24 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #000000;
-  margin: 40px 0;
+  margin: 25px 0 26px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    margin: 40px;
+    margin: 55px 40px;
+    margin-bottom: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 56px 0 66px;
   }
 }
 
 .prog-selection__wrapper {
+  margin-top: 38px;
+  margin-bottom: 28px;
+
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
@@ -45,11 +59,23 @@
   }
 }
 
+.prog-selection__footer {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 70px;
+    margin-bottom: 60px;
+  }
+}
+
 .prog-selection__submit {
   width: 280px;
   height: 40px;
   padding: 10px 73px;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   background-color: #68b738;
 
   font-family: "Oswald", "Arial", sans-serif;
@@ -61,14 +87,21 @@
   border: none;
 
   @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    width: 283px;
+    height: 52px;
+    padding: 10px 53px;
     margin: 20px 40px;
     margin-top: 0;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     width: 568px;
     height: 52px;
-    padding: 16px 143px;
+    padding: 15px 206px;
+    margin-left: 0;
+    margin-right: 62px;
 
     font-size: 20px;
     line-height: 20px;
@@ -77,15 +110,18 @@
 
 .prog-selection__text {
   width: 160px;
-  margin: 0 55px;
-  margin-bottom: 20px;
+  margin: 0 59px;
+  margin-bottom: 30px;
   font-size: 14px;
   line-height: 16px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    width: 180px;
     font-size: 16px;
     line-height: 16px;
     margin: 0;
+    margin-top: 16px;
+    margin-left: 20px;
   }
 }
