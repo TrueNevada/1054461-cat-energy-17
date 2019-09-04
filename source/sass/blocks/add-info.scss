@@ -6,7 +6,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 40px 55px;
+    margin: 0;
   }
 }
 
@@ -24,6 +24,10 @@
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 64px 0 66px;
   }
 }
 
@@ -43,6 +47,15 @@
     top: 22px;
     right: -70px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 100vw;
+    height: 3px;
+
+    top: 22px;
+    right: 0;
+    left: 252px;
+  }
 }
 
 .add-info__title::after {
@@ -57,6 +70,15 @@
     top: 22px;
     left: -70px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    height: 3px;
+
+    top: 22px;
+    right: calc(100% + 40px);
+    left: -50%;
+  }
 }
 
 .add-info__list {
@@ -69,6 +91,10 @@
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
   }
 }
 
@@ -85,8 +111,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 20%;
+    width: 245px;
     margin: 0;
+    text-align: center;
   }
 }
 
@@ -94,11 +121,33 @@
   @media (min-width: $tablet-width) {
     margin-right: 65px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+    margin-left: 8px;
+  }
+}
+
+.checkbox--water {
+  @media (min-width: $desktop-width) {
+    padding-right: 27px;
+  }
 }
 
 .checkbox--milk {
   @media (min-width: $tablet-width) {
     margin-right: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+    padding-right: 82px;
+  }
+}
+
+.checkbox--vit {
+  @media (min-width: $desktop-width) {
+    padding-right: 55px;
   }
 }
 

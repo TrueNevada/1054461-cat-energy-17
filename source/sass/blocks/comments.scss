@@ -4,6 +4,10 @@
   @media (min-width: $tablet-width) {
     margin: 49px 40px 48px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .comments__title {
@@ -13,7 +17,7 @@
   line-height: 24px;
   font-weight: 400;
   color: #000000;
-  margin-top: 20px;
+  margin-top: 18px;
   margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
@@ -21,13 +25,19 @@
     line-height: 36px;
     margin-bottom: 75px;
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 50px 0 75px;
+  }
 }
 
 .comments__title::before {
   content: "";
   position: absolute;
 
-  top: 15px;
+  top: 14px;
   right: -20px;
 
   width: 158px;
@@ -40,6 +50,15 @@
 
     top: 22px;
     right: -70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100vw;
+    height: 3px;
+
+    top: 22px;
+    right: 0;
+    left: 218px;
   }
 }
 
@@ -54,6 +73,15 @@
 
     top: 22px;
     left: -70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    height: 3px;
+
+    top: 22px;
+    right: calc(100% + 40px);
+    left: -50%;
   }
 }
 
@@ -74,6 +102,22 @@
   text-transform: uppercase;
   padding-left: 13px;
   padding-top: 12px;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 1;
+    border-color: #000000;
+  }
+
+  &:invalid {
+    opacity: 1;
+    border-color: #ff8282;
+  }
 
   @media (min-width: $tablet-width) {
     height: 174px;

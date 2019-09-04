@@ -74,6 +74,23 @@
 }
 
 .site-list__item--catalog {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 7px;
+    border-bottom: 2px solid #68b738;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 8px;
+    border-bottom: 2px solid #68b738;
+  }
+}
+
+.site-list__item--form {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 7px;
+    border-bottom: 2px solid #68b738;
+  }
+
   @media (min-width: $desktop-width) {
     padding-bottom: 8px;
     border-bottom: 2px solid #68b738;

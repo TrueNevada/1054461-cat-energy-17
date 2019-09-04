@@ -15,16 +15,16 @@
   line-height: 60px;
   font-weight: 400;
   color: #000000;
-  margin: 17px 0;
+  margin: 15px 0 17px;
 
   @media (min-width: $tablet-width) {
-    margin: 40px 0;
+    margin: 52px 0;
     font-size: 60px;
     line-height: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
+    margin: 68px 0 56px;
   }
 }
 
@@ -34,7 +34,7 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #000000;
-  margin: 25px 0;
+  margin: 25px 0 26px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -63,6 +63,11 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 70px;
+    margin-bottom: 60px;
   }
 }
 
@@ -94,7 +99,9 @@
   @media (min-width: $desktop-width) {
     width: 568px;
     height: 52px;
-    padding: 16px 143px;
+    padding: 15px 206px;
+    margin-left: 0;
+    margin-right: 62px;
 
     font-size: 20px;
     line-height: 20px;

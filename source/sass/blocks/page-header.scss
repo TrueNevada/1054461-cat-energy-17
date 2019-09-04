@@ -7,17 +7,23 @@
   width: 320px;
   margin: 0 auto;
   padding-top: 11px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
   @media (min-width: $tablet-width) {
     width: 768px;
     padding-top: 25px;
     margin-bottom: 12px;
+    border: none;
   }
 
   @media (min-width: $desktop-width) {
     width: 1300px;
     padding-top: 55px;
   }
+}
+
+.page-header--index {
+  border: none;
 }
 
 .page-header__menu {
@@ -38,6 +44,19 @@
   @media (min-width: $desktop-width) {
     width: 203px;
     margin-left: 40px;
+  }
+}
+
+.page-header__logo {
+  opacity: 1;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 

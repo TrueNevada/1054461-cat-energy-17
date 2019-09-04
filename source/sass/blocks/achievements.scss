@@ -16,7 +16,7 @@
   @media (min-width: $desktop-width) {
     width: 100%;
     margin: 0;
-    background: linear-gradient(to bottom, #ffffff 23%, #f2f2f2 23%);
+    background: linear-gradient(to bottom, #ffffff 25%, #f2f2f2 25%);
     padding-bottom: 42px;
   }
 }
@@ -26,7 +26,7 @@
     display: flex;
     flex-direction: row;
     width: 1300px;
-    margin: 0 auto;
+    margin: 0 auto 28px;
   }
 }
 
@@ -100,7 +100,7 @@
   flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
-    width: 368px;
+    width: 366px;
   }
 }
 
@@ -141,6 +141,10 @@
 
   @media (min-width: $tablet-width) {
     top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -2px;
   }
 }
 
@@ -194,6 +198,12 @@
     width: 100%;
     text-align: left;
     margin-top: 58px;
+  }
+}
+
+.achievements__val {
+  @media (min-width: $desktop-width) {
+    margin-left: 61px;
   }
 }
 
@@ -252,6 +262,12 @@
   @media (min-width: $tablet-width) {
     margin-top: 15px;
   }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    bottom: -51px;
+    left: 77px;
+  }
 }
 
 .slider__bar-wrapper {
@@ -267,6 +283,7 @@
 }
 
 .slider__bar {
+  // stylelint-disable-next-line
   -webkit-appearance: none;
   width: 84px;
   height: 14px;
@@ -278,7 +295,7 @@
 
   @media (min-width: $tablet-width) {
     width: 428px;
-    height: 3px;
+    height: 6px;
     border: none;
     padding: 0;
     background-color: #dcdcdc;
@@ -286,6 +303,7 @@
 }
 
 .slider__bar::-webkit-slider-thumb {
+  // stylelint-disable-next-line
   -webkit-appearance: none;
   appearance: none;
   width: 35px;
@@ -294,6 +312,15 @@
   background-color: #68b738;
   border: 0;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border-color: 1px solid #cecece;
+    box-shadow: 0 3px 2px 2px rgba(0, 0, 0, 0.2);
+  }
 }
 
 .slider__button {
