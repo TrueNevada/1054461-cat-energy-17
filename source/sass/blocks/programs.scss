@@ -2,7 +2,7 @@
   margin-bottom: 17px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 49px;
+    margin-bottom: 21px;
   }
 }
 
@@ -25,6 +25,10 @@
 
     z-index: -1;
   }
+
+  @media (min-width: $desktop-width) and (min-resolution: 1.5dppx) {
+    background-image: url("../img/index-background-desktop@2x.jpg");
+  }
 }
 
 .programs__header {
@@ -39,16 +43,24 @@
 
   margin-bottom: 23px;
 
+  @media (min-resolution: 1.5dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
+
   @media (min-width: $tablet-width) {
     background-image: url("../img/index-can-tablet@1x.jpg");
     background-repeat: no-repeat;
-    background-position: 30px 230px;
+    background-position: 30px 200px;
 
     font-family: "Oswald", "Arial", sans-serif;
     color: #000000;
 
     padding-bottom: 543px;
     margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) and (min-resolution: 1.5dppx) {
+    background-image: url("../img/index-can-tablet@2x.jpg");
   }
 
   @media (min-width: $desktop-width) {
@@ -72,6 +84,10 @@
   width: 280px;
   height: 271px;
 
+  @media (min-resolution: 1.5dppx) {
+    background-image: url("../img/index-can-mobile@2x.png");
+  }
+
   @media (min-width: $tablet-width) {
     display: none;
     background-image: none;
@@ -85,8 +101,12 @@
     width: 552px;
     height: 499px;
 
-    top: -60px;;
+    top: -80px;
     left: 490px;
+  }
+
+  @media (min-width: $desktop-width) and (min-resolution: 1.5dppx) {
+    background-image: url("../img/index-can-desktop@2x.png");
   }
 }
 
@@ -100,8 +120,8 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    margin: 0 86px;
-    margin-bottom: 40px;
+    padding: 0;
+    margin: 53px 86px 40px;
     font-size: 60px;
     line-height: 60px;
     font-weight: 400;
@@ -110,9 +130,8 @@
 
   @media (min-width: $desktop-width) {
     width: 768px;
-    padding-top: 19px;
     margin: 0 120px;
-    margin-top: 78px;
+    margin-top: 103px;
     margin-bottom: 40px;
     font-size: 60px;
     line-height: 60px;
@@ -131,7 +150,7 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    margin: 0 86px;
+    margin: 0 87px;
     margin-bottom: 65px;
     font-size: 20px;
     line-height: 20px;

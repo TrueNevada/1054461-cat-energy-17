@@ -1,4 +1,4 @@
-var range = document.querySelector('#slider__range')
+var range = document.querySelector('#slider__bar')
 var before = document.querySelector('.slider__item--before');
 
 range.addEventListener('input', function () {

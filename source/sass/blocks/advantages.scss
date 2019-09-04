@@ -2,14 +2,14 @@
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
-  margin-bottom: 62px;
+  margin-bottom: 42px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 143px;
+    margin-bottom: 128px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 125px;
+    margin-bottom: 107px;
   }
 }
 
@@ -87,7 +87,7 @@
   background-position: 5px 5px;
   background-color: #68b738;
 
-  top: 0;
+  top: -2px;
   left: -80px;
 
   width: 60px;
@@ -100,11 +100,11 @@
     width: 80px;
     height: 80px;
 
-    top: -7px;
+    top: -9px;
     left: 0;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     top: 0;
   }
 }
@@ -126,6 +126,10 @@
   }
 
   @media (min-width: $tablet-width) {
+    top: -46px;
+  }
+
+  @media (min-width: $desktop-width) {
     top: -40px;
   }
 }
@@ -151,7 +155,7 @@
   background-repeat: no-repeat;
   background-position: 5px 5px;
 
-  top: 0;
+  top: -2px;
   left: -80px;
 
   width: 60px;
@@ -160,14 +164,14 @@
   @media (min-width: $tablet-width) {
     background-position: 15px 15px;
 
-    top: -7px;
+    top: -9px;
     left: 0;
 
     width: 80px;
     height: 80px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     top: 0;
   }
 }
@@ -189,6 +193,10 @@
   }
 
   @media (min-width: $tablet-width) {
+    top: -46px;
+  }
+
+  @media (min-width: $desktop-width) {
     top: -40px;
   }
 }
@@ -222,7 +230,7 @@
     height: 80px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     top: 0;
     left: 2px;
   }
@@ -245,6 +253,10 @@
   }
 
   @media (min-width: $tablet-width) {
+    top: -44px;
+  }
+
+  @media (min-width: $desktop-width) {
     top: -40px;
   }
 }
@@ -278,7 +290,7 @@
     height: 80px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     top: 0;
     left: 2px;
   }
@@ -301,6 +313,10 @@
   }
 
   @media (min-width: $tablet-width) {
+    top: -44px;
+  }
+
+  @media (min-width: $desktop-width) {
     top: -40px;
   }
 }
@@ -308,13 +324,17 @@
 .advantages__item-description {
   font-size: 14px;
   line-height: 18px;
-  margin: 27px 0;
+  margin: 0 0 26px;
 
   @media (min-width: $tablet-width) {
     width: 245px;
     font-size: 16px;
     line-height: 24px;
     margin: 0;
-    margin-top: 17px;
+    margin-top: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 16px;
   }
 }
