@@ -17,7 +17,7 @@
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
-  color: #000000;
+  color: #111111;
   margin: 0;
   margin-bottom: 33px;
 
@@ -36,7 +36,7 @@
   content: "";
   position: absolute;
 
-  top: 15px;
+  top: 14px;
   right: -20px;
 
   width: 99px;
@@ -89,6 +89,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 
@@ -125,7 +126,7 @@
   width: 52px;
 
   @media (min-width: $tablet-width) {
-    width: 71px;
+    width: 84px;
   }
 }
 
@@ -147,21 +148,6 @@
   text-transform: uppercase;
   outline: none;
 
-  &:hover,
-  &:focus {
-    opacity: 1;
-  }
-
-  &:active {
-    opacity: 1;
-    border-color: #000000;
-  }
-
-  &:invalid {
-    opacity: 1;
-    border-color: #ff8282;
-  }
-
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
@@ -171,34 +157,26 @@
 
 .about-you__value--email {
   width: 219px;
-  padding-left: 12px;
 
   @media (min-width: $tablet-width) {
     width: 551px;
-    padding-left: 23px;
   }
 
   @media (min-width: $desktop-width) {
     width: 486px;
-    padding-left: 17px;
   }
 }
 
 .about-you__value--tel {
   width: 204px;
-  padding-left: 12px;
-  padding-top: 5px;
+
 
   @media (min-width: $tablet-width) {
     width: 535px;
-    padding-left: 20px;
-    padding-top: 2px;
   }
 
   @media (min-width: $desktop-width) {
     width: 472px;
-    padding-left: 18px;
-    padding-top: 2px;
   }
 }
 
@@ -232,6 +210,6 @@
   }
 }
 
-.about-you__mail:active {
+.about-you__mail:focus {
   fill: #68b738;
 }

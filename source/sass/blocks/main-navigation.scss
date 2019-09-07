@@ -24,9 +24,10 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 20px;
   line-height: 20px;
+  font-weight: 400;
   text-transform: uppercase;
   text-align: center;
-  color: #000000;
+  color: #111111;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -40,7 +41,7 @@
     line-height: 25px;
     text-align: left;
     text-transform: uppercase;
-    color: #000000;
+    color: #111111;
   }
 
   @media (min-width: $desktop-width) {
@@ -98,7 +99,7 @@
 }
 
 .site-list__link {
-  color: #000000;
+  color: #111111;
 
   &:focus,
   &:hover {

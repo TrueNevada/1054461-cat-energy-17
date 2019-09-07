@@ -41,10 +41,10 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #000000;
+  color: #111111;
 
   @media (min-width: $tablet-width) {
-    width: 53px;
+    width: 66px;
 
     font-size: 20px;
     line-height: 20px;
@@ -76,30 +76,13 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  padding-left: 12px;
   outline: none;
-
-  &:hover,
-  &:focus {
-    opacity: 1;
-  }
-
-  &:active {
-    opacity: 1;
-    border-color: #000000;
-  }
-
-  &:invalid {
-    opacity: 1;
-    border-color: #ff8282;
-  }
 
   @media (min-width: $tablet-width) {
     width: 567px;
     font-size: 20px;
     line-height: 20px;
     height: 52px;
-    padding-left: 18px;
   }
 
   @media (min-width: $desktop-width) {
@@ -109,12 +92,10 @@
 
 .cat-info__value--weight {
   width: 204px;
-  padding-left: 12px;
 
   @media (min-width: $tablet-width) {
     width: 536px;
     padding-bottom: 5px;
-    padding-left: 19px;
   }
 
   @media (min-width: $desktop-width) {
@@ -124,14 +105,9 @@
 
 .cat-info__value--age {
   width: 172px;
-  padding-left: 12px;
-  padding-top: 5px;
 
   @media (min-width: $tablet-width) {
     width: 497px;
-    padding-top: 0;
-    padding-bottom: 5px;
-    padding-left: 19px;
   }
 
   @media (min-width: $desktop-width) {
