@@ -1,6 +1,6 @@
 .prog-selection {
   @media (min-width: $tablet-width) {
-    margin-bottom: 55px;
+    margin-bottom: 57px;
   }
 
   @media (min-width: $desktop-width) {
@@ -14,17 +14,17 @@
   font-size: 36px;
   line-height: 60px;
   font-weight: 400;
-  color: #000000;
+  color: #111111;
   margin: 15px 0 17px;
 
   @media (min-width: $tablet-width) {
-    margin: 52px 0;
+    margin: 40px 0 52px;
     font-size: 60px;
     line-height: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 68px 0 56px;
+    margin: 48px 0 56px;
   }
 }
 
@@ -33,7 +33,7 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-  color: #000000;
+  color: #111111;
   margin: 25px 0 26px;
 
   @media (min-width: $tablet-width) {
@@ -59,14 +59,132 @@
   }
 }
 
+.prog-selection__input {
+  padding-left: 13px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(205, 205, 205, 0.5);
+
+  @media (min-width: $tablet-width) {
+    padding-left: 19px;
+  }
+
+  &:hover {
+    border-color: rgba(205, 205, 205, 1);
+  }
+
+  &:focus {
+    padding-left: 12px;
+    border-width: 2px;
+    border-color: rgba(68, 68, 68, 1);
+
+    + .about-you__mail,
+    + .about-you__phone {
+      fill: #68b738;
+    }
+
+    @media (min-width: $tablet-width) {
+      padding-left: 18px;
+    }
+  }
+}
+
+.prog-selection__input::-webkit-input-placeholder {
+  opacity: 1;
+  color: #444444;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.prog-selection__input::-moz-placeholder {
+  opacity: 1;
+  color: #444444;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.prog-selection__input:-moz-placeholder {
+  opacity: 1;
+  color: #444444;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.prog-selection__input:-ms-input-placeholder {
+  opacity: 1;
+  color: #444444;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.prog-selection__input:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.prog-selection__input:focus::-moz-placeholder {
+  opacity: 0;
+}
+
+.prog-selection__input:focus:-moz-placeholder {
+  opacity: 0;
+}
+
+.prog-selection__input:focus:-ms-input-placeholder {
+  opacity: 0;
+}
+
+.prog-selection__input--invalid {
+  padding-left: 12px;
+  border-width: 2px;
+  border-color: #ff8282;
+
+  + .about-you__mail,
+  + .about-you__phone {
+    fill: #ff8282;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 18px;
+  }
+}
+
 .prog-selection__footer {
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
+    margin-top: 25px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 70px;
+    margin-top: 52px;
     margin-bottom: 60px;
   }
 }

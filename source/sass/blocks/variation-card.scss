@@ -36,7 +36,7 @@
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
-  color: #000000;
+  color: #111111;
 
   @media (min-width: $tablet-width) {
     width: 245px;
@@ -131,7 +131,7 @@
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
-  color: #000000;
+  color: #111111;
 
   @media (min-width: $tablet-width) {
     width: 290px;
@@ -213,16 +213,17 @@
 }
 
 .variation-card__description {
-  padding: 0 20px;
-  padding-bottom: 29px;
+  padding: 0 0 24px;
+  margin: 0 20px 18px;
   font-size: 14px;
   line-height: 18px;
   text-align: left;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
   @media (min-width: $tablet-width) {
     width: 480px;
     padding: 0 52px;
-    margin-bottom: 53px;
+    margin: 0 0 55px;
     font-size: 16px;
     line-height: 24px;
     border: none;
@@ -236,8 +237,8 @@
 }
 
 .variation-card__description--pro {
-  padding: 0 20px;
-  padding-bottom: 29px;
+  padding: 0 0 22px;
+  margin: 0 20px 18px;
   font-size: 14px;
   line-height: 18px;
   text-align: left;
@@ -245,7 +246,7 @@
   @media (min-width: $tablet-width) {
     width: 445px;
     padding: 0 52px;
-    margin-bottom: 53px;
+    margin: 0 0 55px;
     font-size: 16px;
     line-height: 24px;
     border: none;
@@ -265,7 +266,7 @@
   line-height: 16px;
   text-transform: uppercase;
   padding: 0 20px;
-  color: #000000;
+  color: #111111;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

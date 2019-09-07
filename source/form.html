@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswaldregular.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswaldmedium.woff" as="font" type="font/woff" crossorigin="anonymous">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
@@ -40,67 +44,67 @@
       </nav>
     </header>
 
-    <main class="page-main container">
+    <main class="page-main">
 
-      <h1 class="visually-hidden">«Cat Energy» — функциональное питание для котов</h1>
-
-      <form class="prog-selection" action="https://echo.htmlacademy.ru" method="post">
-        <h2 class="prog-selection__title">Подбор программы</h2>
-        <p class="prog-selection__description">Заполните анкету и мы подберем<br> программу питания для вашего кота</p>
-        <div class="prog-selection__wrapper">
-          <div class="cat-info">
-            <div class="cat-info__field">
+      <div class="container">
+        <h1 class="visually-hidden">«Cat Energy» — функциональное питание для котов</h1>
+        <form class="prog-selection" action="https://echo.htmlacademy.ru" method="post">
+          <h2 class="prog-selection__title">Подбор программы</h2>
+          <p class="prog-selection__description">Заполните анкету и мы подберем<br> программу питания для вашего кота</p>
+          <div class="prog-selection__wrapper">
+            <div class="cat-info">
+              <div class="cat-info__field">
                 <label class="cat-info__type" for="cat-name">Имя:<sup>*</sup></label>
-                <input class="cat-info__value" id="cat-name" type="text" name="cat-name" value="" placeholder="Барсик">
-            </div>
-            <div class="cat-info__field">
+                <input class="prog-selection__input cat-info__value" id="cat-name" type="text" name="cat-name" placeholder="Барсик" required>
+              </div>
+              <div class="cat-info__field">
                 <label class="cat-info__type cat-info__type--weight" for="weight">Вес (кг):<sup>*</sup></label>
-                <input class="cat-info__value cat-info__value--weight" id="weight" type="text" name="weight" value="" placeholder="7">
-            </div>
-            <div class="cat-info__field cat-info__field--age">
+                <input class="prog-selection__input cat-info__value cat-info__value--weight" id="weight" type="text" name="weight"  placeholder="7" required>
+              </div>
+              <div class="cat-info__field cat-info__field--age">
                 <label class="cat-info__type cat-info__type--age" for="age">Возраст (лет):</label>
-                <input class="cat-info__value cat-info__value--age" id="age" type="text" name="age" value="" placeholder="7">
+                <input class="prog-selection__input cat-info__value cat-info__value--age" id="age" type="text" name="age" placeholder="7">
+              </div>
             </div>
-          </div>
-          <div class="goal">
-            <ul class="goal__list">
-              <li class="goal__item radio">
-                <input id="radio-1" type="radio" name="goal" value="Похудение" checked="">
-                <label for="radio-1">Похудение</label>
-              </li>
-              <li class="goal__item radio">
-                <input id="radio-2" type="radio" name="goal" value="Набор массы">
-                <label for="radio-2">Набор массы</label>
-              </li>
-              <li class="goal__item radio radio--advice">
-                <input id="radio-3" type="radio" name="goal" value="Не знаю (нужен ваш совет)">
-                <label for="radio-3">Не знаю (нужен ваш совет)</label>
-              </li>
+            <div class="goal">
+              <ul class="goal__list">
+                <li class="goal__item radio">
+                  <input id="radio-1" type="radio" name="goal" value="Похудение" checked="">
+                  <label for="radio-1">Похудение</label>
+                </li>
+                <li class="goal__item radio">
+                  <input id="radio-2" type="radio" name="goal" value="Набор массы">
+                  <label for="radio-2">Набор массы</label>
+                </li>
+                <li class="goal__item radio radio--advice">
+                  <input id="radio-3" type="radio" name="goal" value="Не знаю (нужен ваш совет)">
+                  <label for="radio-3">Не знаю (нужен ваш совет)</label>
+                </li>
               </ul>
             </div>
-        </div>
+          </div>
           <div class="about-you">
             <h3 class="about-you__title">Контактные данные (владельца кота)</h3>
             <div class="about-you__wrapper">
               <div class="about-you__field">
                 <label class="about-you__type about-you__type--email" for="email">E-mail:<sup>*</sup></label>
-                <input class="about-you__value about-you__value--email" id="email" type="email" name="email" value="" placeholder="kuklachev@gmail.com">
+                <input class="prog-selection__input about-you__value about-you__value--email" id="email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
                 <svg class="about-you__mail" width="17" height="13" aria-hidden="true" role="img">
                   <use xlink:href="#icon-mail"></use>
                 </svg>
-            </div>
-            <div class="about-you__field">
+              </div>
+              <div class="about-you__field">
                 <label class="about-you__type about-you__type--tel" for="telephone">Телефон:<sup>*</sup></label>
-                <input class="about-you__value about-you__value--tel" id="telephone" type="tel" name="telephone" value="" placeholder="8 (960) 900-60-90">
+                <input class="prog-selection__input about-you__value about-you__value--tel" id="telephone" type="tel" name="telephone" placeholder="8 (960) 900-60-90" pattern="8\([0-9]{3}\)[0-9]{7}" required>
                 <svg class="about-you__phone" width="20" height="20" aria-hidden="true" role="img">
                   <use xlink:href="#icon-phone"></use>
                 </svg>
-            </div>
+              </div>
             </div>
           </div>
           <div class="comments">
             <h3 class="comments__title">Комментарий</h3>
-            <textarea class="comments__value" type="text" name="comment" value="" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <textarea class="prog-selection__input comments__value" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
           <div class="add-info">
             <h3 class="add-info__title">Дополнительно</h3>
@@ -109,15 +113,15 @@
                 <input id="checkbox-1" type="checkbox" name="add-info" value="Сахарозаменитель" checked="">
                 <label for="checkbox-1">Сахарозаменитель</label>
               </li>
-              <li class="add__item checkbox checkbox--water">
+              <li class="add-info__item checkbox checkbox--water">
                 <input id="checkbox-2" type="checkbox" name="add-info" value="Питьевая вода">
                 <label for="checkbox-2">Питьевая вода</label>
               </li>
-              <li class="add__item checkbox checkbox--milk">
+              <li class="add-info__item checkbox checkbox--milk">
                 <input id="checkbox-3" type="checkbox" name="add-info" value="Молоко">
                 <label for="checkbox-3">Молоко</label>
               </li>
-              <li class="add__item checkbox checkbox--vit">
+              <li class="add-info__item checkbox checkbox--vit">
                   <input id="checkbox-4" type="checkbox" name="add-info" value="Витамины">
                   <label for="checkbox-4">Витамины</label>
               </li>
@@ -127,19 +131,31 @@
             <button class="prog-selection__submit button" type="submit">Отправить заявку</button>
             <p class="prog-selection__text"><sup>*</sup> — Обязательные поля</p>
           </div>
-      </form>
+        </form>
+      </div>
 
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__contacts container">
-        <b class="contacts__offer">Приглашаем к&nbsp;сотрудничеству дилеров!</b>
-        <div class="contacts__info">
-          <p class="conacts__address">ул. Большая Конюшенная, д. 19/8</p>
-          <p class="conacts__city">Санкт-Петербург</p>
+      <div class="page-footer__flex">
+        <div class="page-footer__container container">
+          <div class="page-footer__contacts">
+            <b class="page-footer__offer">Приглашаем к&nbsp;сотрудничеству дилеров!</b>
+            <div class="page-footer__info">
+              <p class="page-footer__address">ул. Большая Конюшенная, д. 19/8</p>
+              <p class="page-footer__city">Санкт-Петербург</p>
+            </div>
+          </div>
+        </div>
+        <div class="page-footer__map-wrap">
+          <iframe class="page-footer__map map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002762!2d30.320858715618378!3d59.93871916905475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1552763791390" allowfullscreen=""></iframe>
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/map-desktop.jpg">
+            <source media="(min-width: 768px)" srcset="img/map-tablet.jpg">
+            <img class="page-footer__map-image" src="img/map-mobile.jpg" width="320" height="366" alt="Карта Города">
+          </picture>
         </div>
       </div>
-      <iframe class="page-footer__map map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002762!2d30.320858715618378!3d59.93871916905475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1552763791390" allowfullscreen=""></iframe>
       <div class="page-footer__social-footer">
         <a class="page-footer__logo">
           <img class="page-footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy">
@@ -147,21 +163,21 @@
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link" href="https://vk.com/cat_energy">
+              <a class="social__link" href="https://vk.com/cat_energy" aria-label="VK">
                 <svg class="social__vk" width="22" height="12" aria-hidden="true" role="img">
                   <use xlink:href="#icon-vk"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="https://instagram.com/cat_energy">
+              <a class="social__link" href="https://instagram.com/cat_energy" aria-label="Instagram">
                 <svg class="social__insta" width="16" height="16" aria-hidden="true" role="img">
                   <use xlink:href="#icon-insta"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="https://facebook.com/cat_energy">
+              <a class="social__link" href="https://facebook.com/cat_energy" aria-label="Facebook">
                 <svg class="social__fb" width="10" height="19" aria-hidden="true" role="img">
                   <use xlink:href="#icon-fb"></use>
                 </svg>
@@ -179,6 +195,6 @@
         </div>
       </div>
     </footer>
-
+    <script src="js/invalid.js"></script>
   </body>
 </html>

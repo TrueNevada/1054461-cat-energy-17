@@ -1,12 +1,12 @@
 .goods {
-  margin-bottom: 33px;
+  margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 86px;
+    margin-bottom: 47px;
   }
 }
 
@@ -15,14 +15,18 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 24px;
-  color: #000000;
-  margin-top: 25px;
-  margin-bottom: 41px;
+  font-weight: 400;
+  color: #111111;
+  margin: 28px 0 0;
+  padding-bottom: 33px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
   @media (min-width: $tablet-width) {
-    margin: 62px 37px 107px;
+    padding: 0;
+    margin: 65px 37px 82px;
     font-size: 36px;
     line-height: 36px;
+    border: none;
   }
 
   @media (min-width: $desktop-width) {
@@ -34,10 +38,10 @@
   content: "";
   position: absolute;
 
-  top: 15px;
+  top: 14px;
   right: -20px;
 
-  width: 99px;
+  width: 53px;
   height: 3px;
   background-color: #68b738;
 
@@ -87,12 +91,15 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 45px;
+    border: none;
   }
 }
 
 .goods__wrapper {
+  margin-bottom: 38px;
+
   @media (min-width: $desktop-width) {
     width: 893px;
   }
@@ -101,20 +108,24 @@
 .goods__item {
   display: flex;
   flex-direction: column;
-  margin-bottom: 21px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 30px 36px 54px;
+    padding: 25px 36px 27px;
+    margin: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
   }
 
   @media (min-width: $desktop-width) {
     align-items: center;
     margin: 0;
     padding: 15px 0 16px;
+    border: none;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
   }
 }
@@ -126,13 +137,14 @@
 }
 
 .goods__item-caption {
-  margin-top: 10px;
+  margin-top: 14px;
   margin-bottom: 12px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
+  font-weight: 400;
   text-transform: uppercase;
-  color: #000000;
+  color: #111111;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -143,6 +155,24 @@
 
   @media (min-width: $desktop-width) {
     width: 246px;
+  }
+}
+
+.goods__item-caption--milk {
+  margin-top: 13px;
+  margin-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.goods__item-caption--vit {
+  margin-top: 13px;
+  margin-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
   }
 }
 
@@ -241,10 +271,13 @@
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  background-size: 280px 289px;
+  background-color: #6eb245;
 
   min-height: 290px;
 
-  margin-top: 55px;
+  padding-top: 187px;
+  margin-bottom: 0;
 
   @media (min-resolution: 1.5dppx) {
     background-image: url("../img/gift-photo-mobile@2x.jpg");
@@ -254,8 +287,11 @@
     background-image: url("../img/gift-photo-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: 0 0;
+    background-size: 708px 200px;
     min-height: 200px;
-    margin: 98px 0 81px;
+    padding-top: 72px;
+    padding-left: 370px;
+    margin: 69px 0 82px;
   }
 
   @media (min-width: $tablet-width) and (min-resolution: 1.5dppx) {
@@ -265,10 +301,14 @@
   @media (min-width: $desktop-width) {
     width: 245px;
     min-height: 289px;
+    padding: 0;
+    padding-top: 188px;
     margin: 0;
+
     background-image: url("../img/gift-photo-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: 0 0;
+    background-size: 245px 289px;
   }
 
   @media (min-width: $desktop-width) and (min-resolution: 1.5dppx) {
@@ -300,27 +340,19 @@
 }
 
 .goods__gift-description {
-  position: relative;
-  top: 189px;
-
   width: 170px;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
   text-align: center;
   margin: 0 55px;
-  overflow: hidden;
-
 
   @media (min-width: $tablet-width) {
     text-align: left;
-    top: 72px;
-    margin-left: 425px;
   }
 
   @media (min-width: $desktop-width) {
     text-align: center;
-    top: 188px;
-    margin: 0 37px;
+    margin: 0 auto;
   }
 }

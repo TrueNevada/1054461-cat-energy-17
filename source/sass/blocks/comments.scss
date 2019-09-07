@@ -16,7 +16,7 @@
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
-  color: #000000;
+  color: #111111;
   margin-top: 18px;
   margin-bottom: 35px;
 
@@ -104,26 +104,21 @@
   padding-top: 12px;
   outline: none;
 
-  &:hover,
-  &:focus {
-    opacity: 1;
-  }
-
-  &:active {
-    opacity: 1;
-    border-color: #000000;
-  }
-
-  &:invalid {
-    opacity: 1;
-    border-color: #ff8282;
-  }
-
   @media (min-width: $tablet-width) {
     height: 174px;
     font-size: 20px;
     line-height: 30px;
     padding-left: 18px;
     padding-top: 10px;
+  }
+
+  &:focus {
+    padding-left: 12px;
+    padding-top: 11px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 17px;
+    padding-top: 9px;
   }
 }
